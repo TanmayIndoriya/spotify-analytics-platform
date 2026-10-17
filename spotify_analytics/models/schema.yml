@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_listening_events
+    columns:
+      - name: listening_event_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: track_id
+        data_tests:
+          - not_null
+
+      - name: played_at
+        data_tests:
+          - not_null
+
+  - name: fct_listening_history
+    columns:
+      - name: listening_event_id
+        data_tests:
+          - unique
+          - not_null
+
+  - name: mart_top_tracks
+    columns:
+      - name: track_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: play_count
+        data_tests:
+          - not_null
