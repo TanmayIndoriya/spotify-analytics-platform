@@ -1,0 +1,175 @@
+[0m14:36:01.983805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70e4ac9a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70e68d0a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70e32979d0>]}
+
+
+============================== 14:36:01.989305 | 9e35c3ed-664c-42ed-b9fd-e61db1573a0c ==============================
+[0m14:36:01.989305 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m14:36:01.990323 [debug] [MainThread]: running dbt with arguments {'hints_enabled': 'True', 'introspect': 'True', 'empty': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'profiles_dir': '/home/tanmay/.dbt', 'fail_fast': 'False', 'printer_width': '80', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'static_parser': 'True', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'invocation_command': 'dbt init spotify_analytics', 'version_check': 'True', 'no_print': 'None', 'debug': 'False', 'maximum_seed_size_mib': '1', 'cache_selected_only': 'False', 'warn_error': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'use_experimental_parser': 'False'}
+[0m14:36:01.990972 [debug] [MainThread]: Tracking: tracking
+[0m14:36:02.050159 [info ] [MainThread]: Creating dbt configuration folder at /home/tanmay/.dbt
+[0m14:36:02.053424 [debug] [MainThread]: Starter project path: /home/tanmay/Projects/spotify-analytics-platform/.venv/lib/python3.14/site-packages/dbt/include/starter_project
+[0m14:36:02.063250 [info ] [MainThread]: Setting up your profile.
+[0m14:54:07.912724 [info ] [MainThread]: Profile spotify_analytics written to /home/tanmay/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m14:54:07.948062 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m14:54:07.950595 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m14:54:07.951717 [info ] [MainThread]: python version: 3.14.8
+[0m14:54:07.952589 [info ] [MainThread]: python path: /home/tanmay/Projects/spotify-analytics-platform/.venv/bin/python
+[0m14:54:07.953429 [info ] [MainThread]: os info: Linux-7.2.9-arch1-1-x86_64-with-glibc2.44
+[0m14:54:08.004278 [info ] [MainThread]: Using profiles dir at /home/tanmay/.dbt
+[0m14:54:08.005116 [info ] [MainThread]: Using profiles.yml file at /home/tanmay/.dbt/profiles.yml
+[0m14:54:08.005664 [info ] [MainThread]: Using dbt_project.yml file at /home/tanmay/Projects/spotify-analytics-platform/spotify_analytics/dbt_project.yml
+[0m14:54:08.006481 [info ] [MainThread]: adapter type: postgres
+[0m14:54:08.007022 [info ] [MainThread]: adapter version: 1.11.0
+[0m14:54:08.148483 [info ] [MainThread]: Configuration:
+[0m14:54:08.149053 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:54:08.149457 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:54:08.149816 [info ] [MainThread]: Required dependencies:
+[0m14:54:08.150207 [debug] [MainThread]: Executing "git --help"
+[0m14:54:08.152594 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:54:08.153370 [debug] [MainThread]: STDERR: "b''"
+[0m14:54:08.153878 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:54:08.154420 [info ] [MainThread]: Connection:
+[0m14:54:08.155038 [info ] [MainThread]:   host: /var/run/postgresql
+[0m14:54:08.155606 [info ] [MainThread]:   port: 5432
+[0m14:54:08.156250 [info ] [MainThread]:   user: dev
+[0m14:54:08.156810 [info ] [MainThread]:   database: build-tool-db
+[0m14:54:08.157431 [info ] [MainThread]:   schema: duild-schema
+[0m14:54:08.158014 [info ] [MainThread]:   connect_timeout: 10
+[0m14:54:08.158565 [info ] [MainThread]:   role: None
+[0m14:54:08.159187 [info ] [MainThread]:   search_path: None
+[0m14:54:08.159814 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:54:08.160418 [info ] [MainThread]:   sslmode: None
+[0m14:54:08.161076 [info ] [MainThread]:   sslcert: None
+[0m14:54:08.161703 [info ] [MainThread]:   sslkey: None
+[0m14:54:08.162474 [info ] [MainThread]:   sslrootcert: None
+[0m14:54:08.162961 [info ] [MainThread]:   application_name: dbt
+[0m14:54:08.163394 [info ] [MainThread]:   autocommit: False
+[0m14:54:08.163916 [info ] [MainThread]:   retries: 1
+[0m14:54:08.164674 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m14:54:08.231098 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:54:08.267624 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:54:08.268167 [debug] [MainThread]: On debug: select 1 as id
+[0m14:54:08.268575 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:54:08.272378 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  role "dev" does not exist
+
+[0m14:54:08.275504 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m14:54:08.276336 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m14:54:08.277084 [debug] [MainThread]: On debug: No close available on handle
+[0m14:54:08.277766 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:54:08.278466 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:54:08.279145 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  role "dev" does not exist
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:54:08.279945 [info ] [MainThread]: Your new dbt project "spotify_analytics" was created!
+Initialized new project in /home/tanmay/Projects/spotify-analytics-platform/spotify_analytics/spotify_analytics
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:54:08.280673 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m14:54:08.282615 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 1086.3973, "process_in_blocks": "3608", "process_kernel_time": 0.134606, "process_mem_max_rss": "135524", "process_out_blocks": "96", "process_user_time": 2.143148}
+[0m14:54:08.283571 [debug] [MainThread]: Command `dbt init` succeeded at 14:54:08.283385 after 1086.40 seconds
+[0m14:54:08.284100 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:54:08.284639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70e34d5ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70e27fbd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70e27bb350>]}
+[0m14:54:08.285261 [debug] [MainThread]: Flushing usage events
+[0m14:54:09.637957 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:54:24.485102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea26dfda90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea28ccca50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea255639d0>]}
+
+
+============================== 14:54:24.489032 | 4c99baba-2e3d-463f-958b-18de9889b4b6 ==============================
+[0m14:54:24.489032 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m14:54:24.489770 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'partial_parse': 'True', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'hints_enabled': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'empty': 'None', 'log_format': 'default', 'log_cache_events': 'False', 'warn_error': 'None', 'invocation_command': 'dbt debug', 'version_check': 'True', 'write_json': 'True', 'use_colors': 'True', 'debug': 'False', 'profiles_dir': '/home/tanmay/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'quiet': 'False', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None'}
+[0m14:54:24.490356 [debug] [MainThread]: Tracking: tracking
+[0m14:54:24.501470 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m14:54:24.502149 [info ] [MainThread]: python version: 3.14.8
+[0m14:54:24.502626 [info ] [MainThread]: python path: /home/tanmay/Projects/spotify-analytics-platform/.venv/bin/python
+[0m14:54:24.502992 [info ] [MainThread]: os info: Linux-7.2.9-arch1-1-x86_64-with-glibc2.44
+[0m14:54:24.561082 [info ] [MainThread]: Using profiles dir at /home/tanmay/.dbt
+[0m14:54:24.561708 [info ] [MainThread]: Using profiles.yml file at /home/tanmay/.dbt/profiles.yml
+[0m14:54:24.562142 [info ] [MainThread]: Using dbt_project.yml file at /home/tanmay/Projects/spotify-analytics-platform/dbt_project.yml
+[0m14:54:24.562683 [info ] [MainThread]: adapter type: postgres
+[0m14:54:24.563050 [info ] [MainThread]: adapter version: 1.11.0
+[0m14:54:24.563381 [info ] [MainThread]: Configuration:
+[0m14:54:24.563675 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:54:24.563972 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:54:24.564262 [info ] [MainThread]: Required dependencies:
+[0m14:54:24.564585 [debug] [MainThread]: Executing "git --help"
+[0m14:54:24.567517 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:54:24.568629 [debug] [MainThread]: STDERR: "b''"
+[0m14:54:24.569424 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:54:24.570272 [info ] [MainThread]: Connection:
+[0m14:54:24.571084 [info ] [MainThread]:   host: /var/run/postgresql
+[0m14:54:24.571756 [info ] [MainThread]:   port: 5432
+[0m14:54:24.572432 [info ] [MainThread]:   user: dev
+[0m14:54:24.573137 [info ] [MainThread]:   database: build-tool-db
+[0m14:54:24.573763 [info ] [MainThread]:   schema: duild-schema
+[0m14:54:24.574494 [info ] [MainThread]:   connect_timeout: 10
+[0m14:54:24.575210 [info ] [MainThread]:   role: None
+[0m14:54:24.575890 [info ] [MainThread]:   search_path: None
+[0m14:54:24.576546 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:54:24.577218 [info ] [MainThread]:   sslmode: None
+[0m14:54:24.577839 [info ] [MainThread]:   sslcert: None
+[0m14:54:24.578482 [info ] [MainThread]:   sslkey: None
+[0m14:54:24.579118 [info ] [MainThread]:   sslrootcert: None
+[0m14:54:24.579936 [info ] [MainThread]:   application_name: dbt
+[0m14:54:24.580293 [info ] [MainThread]:   autocommit: False
+[0m14:54:24.580598 [info ] [MainThread]:   retries: 1
+[0m14:54:24.581127 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m14:54:24.630898 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:54:24.651551 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:54:24.652096 [debug] [MainThread]: On debug: select 1 as id
+[0m14:54:24.652476 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:54:24.655191 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  role "dev" does not exist
+
+[0m14:54:24.658175 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m14:54:24.658859 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m14:54:24.659533 [debug] [MainThread]: On debug: No close available on handle
+[0m14:54:24.660317 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:54:24.660967 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m14:54:24.661388 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/tanmay/Projects/spotify-analytics-platform/dbt_project.yml> not found
+
+[0m14:54:24.661751 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  role "dev" does not exist
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:54:24.662869 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.27508262, "process_in_blocks": "0", "process_kernel_time": 0.127736, "process_mem_max_rss": "133484", "process_out_blocks": "24", "process_user_time": 2.005993}
+[0m14:54:24.663521 [debug] [MainThread]: Command `dbt debug` failed at 14:54:24.663399 after 0.28 seconds
+[0m14:54:24.663964 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:54:24.664421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea25647a80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea2564ab10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea243e8af0>]}
+[0m14:54:24.664878 [debug] [MainThread]: Flushing usage events
+[0m14:54:26.024329 [debug] [MainThread]: An error was encountered while trying to flush usage events
